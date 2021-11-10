@@ -1,0 +1,17 @@
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 80%;
+  margin: 2em;
+}
+
+#submit-button{
+  text-align: center;
+}
+
+.example-form{
+  width: 100%;
+  box-shadow: 2px;
+}

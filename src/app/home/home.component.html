@@ -1,0 +1,25 @@
+
+<div class="card-container">
+  <mat-card>
+      <mat-card-header>
+         <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>"Product Name from server"</mat-card-title>
+          <mat-card-subtitle>"Company name from server"</mat-card-subtitle>
+      </mat-card-header>
+      <img matCardImage src="assets/NPOC1.png">
+      <mat-card-content>
+          "Content to be fetched from server, Days remaining  "
+      </mat-card-content>
+      <mat-tab-group>
+        <mat-tab label="Status">
+          <p>"180 Days Remaining"</p>
+          <h3>Renew</h3>
+          <button mat-raised-button >30 Days</button>
+          <button mat-raised-button >60 Days</button>
+          <button mat-raised-button >90 Days</button>
+        </mat-tab>
+        <mat-tab label="Remove"> Content 3 </mat-tab>
+      </mat-tab-group>
+  </mat-card>
+</div>
+<app-navbar></app-navbar>

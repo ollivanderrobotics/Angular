@@ -1,0 +1,9 @@
+.card-container{
+  padding: 2em;
+  margin-top: 70px;
+}
+
+.example-header-image {
+  background-image: url('http://www.ollivanderrobotics.com/wp-content/uploads/2021/05/Ollivander-Robotics-logos_transparent-e1620553175343.png');
+  background-size: cover;
+}

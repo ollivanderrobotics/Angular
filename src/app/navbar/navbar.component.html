@@ -1,0 +1,19 @@
+<mat-toolbar class="main">
+  <button mat-button (click)="drawer.toggle()"><mat-icon>menu</mat-icon></button>
+</mat-toolbar>
+
+<mat-toolbar class="toolbarNav">
+  <button mat-button><mat-icon class="material-icons color_blue">home</mat-icon></button>
+  <button mat-button><mat-icon class="material-icons color_blue">add_circle_outline</mat-icon></button>
+  <button mat-button><img class="UserImage" src="https://pbs.twimg.com/profile_images/1418936756871778305/3o0lxQyn_400x400.jpg" alt=""></button>
+</mat-toolbar>
+
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <!-- <p>Auto-resizing sidenav</p> -->
+    <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
+    <button (click)="showFiller = !showFiller" mat-raised-button>
+      Toggle extra text
+    </button>
+  </mat-drawer>
+</mat-drawer-container>
