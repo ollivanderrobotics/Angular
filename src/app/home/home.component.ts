@@ -1,3 +1,4 @@
+import { ApiconfigService } from './../apiconfig.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  products:any[]= [];
+  constructor(private dataService: ApiconfigService) {
+
+   }
 
   ngOnInit(): void {
+    this.getNotes()
+  }
+
+  getNotes(){
+    this.dataService.getConfig().subscribe(data=>{
+    this.products=data;
+
+    })
+
+
   }
 
 }
+

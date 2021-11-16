@@ -1,0 +1,24 @@
+<div class="container">
+  <mat-chip-list class="grid-tile">
+    <mat-chip>Industy</mat-chip>
+    <mat-chip>Education</mat-chip>
+  </mat-chip-list>
+  <mat-grid-list class="grid-tile" cols="1" rowHeight="1:1">
+  <mat-grid-tile >
+    <mat-card>
+        <mat-card-header routerLink="/product">
+            <mat-card-title>"Product Name</mat-card-title>
+            <mat-card-subtitle>Description</mat-card-subtitle>
+        </mat-card-header>
+        <img matCardImage src="assets/NPOC1.png">
+        <mat-card-actions align="start">
+            <button mat-button routerLink="/product">Know More</button>
+        </mat-card-actions>
+    </mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile>2</mat-grid-tile>
+  <mat-grid-tile>3</mat-grid-tile>
+  <mat-grid-tile>4</mat-grid-tile>
+</mat-grid-list>
+</div>
+<app-navbar></app-navbar>

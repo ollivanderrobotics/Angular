@@ -1,28 +1,33 @@
 <div class="parent">
-  <mat-card>
-  <img mat-card-image src="http://www.ollivanderrobotics.com/wp-content/uploads/2021/05/Ollivander-Robotics-logos_transparent-e1620553175343.png" alt="" >
+  <mat-card class="card-container">
+  <img mat-card-image id="user-image" src="https://pbs.twimg.com/profile_images/1418936756871778305/3o0lxQyn_400x400.jpg" >
   <form class="example-form">
     <div style="text-align:center;">
     <mat-form-field class="example-full-width" appearance="legacy">
       <mat-label>Name</mat-label>
-      <input type="text" matInput placeholder="Sumit">
+      <input type="text" matInput>
+      <span matSuffix><mat-icon>edit</mat-icon></span>
     </mat-form-field>
     <mat-form-field class="example-full-width" appearance="legacy">
       <mat-label>Email</mat-label>
       <input type="email" matInput placeholder="sumit@yahoo.com">
+      <span matSuffix><mat-icon>edit</mat-icon></span>
     </mat-form-field>
     <mat-form-field class="example-full-width" appearance="legacy">
       <mat-label>Telephone</mat-label>
       <input type="tel" matInput placeholder="9999999999">
+      <span matSuffix><mat-icon>edit</mat-icon></span>
     </mat-form-field>
     <mat-form-field class="example-full-width" appearance="legacy">
       <mat-label>Password</mat-label>
       <input type="password" matInput placeholder="R@3108">
+      <span matSuffix><mat-icon>edit</mat-icon></span>
     </mat-form-field>
   </div>
   </form>
-    <mat-card-actions><button id="submit-button" mat-button color="primary" routerLink="/home">Submit</button></mat-card-actions>
-
+    <mat-card-actions align="end"><button mat-raised-button color="primary" routerLink="/home">Save</button></mat-card-actions>
+    <button class="louout-button" mat-raised-button color="primary" routerLink="/login">Logout</button>
 </mat-card>
 
 </div>
+<app-navbar></app-navbar>

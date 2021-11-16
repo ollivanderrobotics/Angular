@@ -1,14 +1,14 @@
 
-<div class="card-container">
-  <mat-card>
-      <mat-card-header>
+<div class="card-container" >
+  <mat-card *ngFor="let product of products">
+      <mat-card-header routerLink="/product">
          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>"Product Name from server"</mat-card-title>
-          <mat-card-subtitle>"Company name from server"</mat-card-subtitle>
+          <mat-card-title>{{product.productName}}</mat-card-title>
+          <mat-card-subtitle>{{product.companyName}}</mat-card-subtitle>
       </mat-card-header>
-      <img matCardImage src="assets/NPOC1.png">
+      <img matCardImage src="assets/NPOC1.png" routerLink="/product">
       <mat-card-content>
-          "Content to be fetched from server, Days remaining  "
+          {{product.productDescription}}
       </mat-card-content>
       <mat-tab-group>
         <mat-tab label="Status">
@@ -23,3 +23,7 @@
   </mat-card>
 </div>
 <app-navbar></app-navbar>
+
+<!-- <div>
+  {{products}}
+</div> -->
